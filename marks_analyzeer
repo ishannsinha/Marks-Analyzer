@@ -1,0 +1,25 @@
+marks=[]
+for i in range(5):
+    mark = int(input("Enter marks: "))
+    marks.append(mark)
+def total_marks(marks):
+    total = sum(marks)
+    return total
+
+print("Total marks:", total_marks(marks))
+
+def average_marks(marks):
+    average = sum(marks) / len(marks)
+    return average
+print("Average marks:", average_marks(marks))
+
+def highest_marks(marks):
+    highest = max(marks)
+    return highest
+
+def lowest_marks(marks):
+    lowest = min(marks)
+    return lowest
+
+print("Highest marks:", highest_marks(marks))
+print("Lowest marks:", lowest_marks(marks))
