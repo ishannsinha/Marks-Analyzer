@@ -16,8 +16,8 @@ print("Total marks:", total_marks(marks))
 def average_marks(marks):
     average = sum(marks) / len(marks)
     return average
-    x=average_marks(marks)
-print("Average marks:", average_marks(marks))
+x=average_marks(marks)
+print("Average marks:", x)
 
 def highest_marks(marks):
     highest = max(marks)
@@ -28,16 +28,21 @@ def lowest_marks(marks):
     return lowest
 if(100>=x>90):
     grade="A"
+    print("Grade:", grade)
 elif(90>=x>80):   
     grade="B"
+    print("Grade:", grade)
 elif(80>=x>70):
     grade="C"    
+    print("Grade:", grade)
 elif(70>=x>60):
     grade="D"
+    print("Grade:", grade)
 elif(60>=x>50):
     grade="E"
-elif(50>=x>40):
-    grade="F"        
+    print("Grade:", grade)
+else:
+    print("Fail")     
 print("Highest marks:", highest_marks(marks))
 print("Lowest marks:", lowest_marks(marks))
-print("Grade:", grade)
+
