@@ -1,9 +1,12 @@
 print("== Marks Analyzer ==")
 subject=["Physics","Chemistry","Maths","CS","English"]
 marks=[]
+
 for i in range(5):
     mark = int(input(f"Enter marks for {subject[i]}: "))
     marks.append(mark)
+for i in range(5):
+    print("Marks in", subject[i], ":", marks[i])    
 def total_marks(marks):
     total = sum(marks)
     return total
@@ -13,6 +16,7 @@ print("Total marks:", total_marks(marks))
 def average_marks(marks):
     average = sum(marks) / len(marks)
     return average
+    x=average_marks(marks)
 print("Average marks:", average_marks(marks))
 
 def highest_marks(marks):
@@ -22,6 +26,18 @@ def highest_marks(marks):
 def lowest_marks(marks):
     lowest = min(marks)
     return lowest
-
+if(100>=x>90):
+    grade="A"
+elif(90>=x>80):   
+    grade="B"
+elif(80>=x>70):
+    grade="C"    
+elif(70>=x>60):
+    grade="D"
+elif(60>=x>50):
+    grade="E"
+elif(50>=x>40):
+    grade="F"        
 print("Highest marks:", highest_marks(marks))
 print("Lowest marks:", lowest_marks(marks))
+print("Grade:", grade)
