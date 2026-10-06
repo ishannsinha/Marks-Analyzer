@@ -1,6 +1,8 @@
+print("== Marks Analyzer ==")
+subject=["Physics","Chemistry","Maths","CS","English"]
 marks=[]
 for i in range(5):
-    mark = int(input("Enter marks: "))
+    mark = int(input(f"Enter marks for {subject[i]}: "))
     marks.append(mark)
 def total_marks(marks):
     total = sum(marks)
